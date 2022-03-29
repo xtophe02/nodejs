@@ -1,0 +1,40 @@
+POST http://localhost:4000/graphql
+Content-Type: application/json
+Authorization: Bearer xxx
+X-REQUEST-TYPE: GraphQL
+
+mutation {
+  addNewProductReview(id:3,rating:1,comment:"whoah.. so bad"){
+    reviews{
+      rating
+      comment
+    }
+    description
+  }
+  # productById(id:1){
+  #   description
+  # }
+  # productsByPrice(minPrice:10, maxPrice:90){
+  #   description
+  # }
+    # posts{
+    #   title
+    # }
+  #     products {
+  #   description
+  #   reviews {
+  #     rating
+  #   }
+  # }
+    #     orders {
+    #   subtotal
+    #   items {
+    #     product {
+    #       id
+    #     }
+    #     quantity
+    #   }
+    # }
+}
+
+

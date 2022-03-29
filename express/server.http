@@ -1,0 +1,17 @@
+GET http://localhost:3000/family
+
+###
+GET http://localhost:3000/family/4
+###
+GET http://localhost:3000/message
+
+###
+POST http://localhost:3000/family HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Dahl"
+}
+
+###
+GET https://nasa.christophemoreira.com/v1/planets HTTP/1.1
